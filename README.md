@@ -1,2 +1,2 @@
 # basic-google-recaptcha
-Basic example of Recaptcha in a form with PHP
+Basic example of Google reCaptcha v3 (invisible mode) in a form with check in PHP.

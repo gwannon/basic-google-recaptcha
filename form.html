@@ -1,0 +1,10 @@
+<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+<script src='https://www.google.com/recaptcha/api.js?render=[GOOGLE_RECAPTCHA_PUBLIC_KEY]'></script>
+<script>
+  grecaptcha.ready(function() {
+    grecaptcha.execute('[GOOGLE_RECAPTCHA_PUBLIC_KEY]', {action: 'recaptcha'}).then(function(token) {
+      var recaptchaResponse = document.getElementById('recaptchaResponse');
+      recaptchaResponse.value = token;
+    });
+  });
+</script>
